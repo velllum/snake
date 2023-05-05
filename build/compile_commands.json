@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/main.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/main.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/main.cpp"
+},
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/snake/snake.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/snake/snake.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/snake/snake.cpp"
+},
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/game/game.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/game/game.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/game/game.cpp"
+},
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/food/food.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/food/food.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/food/food.cpp"
+},
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/field/field.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/field/field.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/field/field.cpp"
+},
+{
+  "directory": "/home/velllum/VSCodeProjects/snake_3_3/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++98 -o CMakeFiles/snake_3.dir/other/kbhit.cpp.o -c /home/velllum/VSCodeProjects/snake_3_3/other/kbhit.cpp",
+  "file": "/home/velllum/VSCodeProjects/snake_3_3/other/kbhit.cpp"
+}
+]

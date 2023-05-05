@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/velllum/VSCodeProjects/snake_3_3/const.h
+
+/home/velllum/VSCodeProjects/snake_3_3/field/field.h
+../const.h
+/home/velllum/VSCodeProjects/snake_3_3/const.h
+
+/home/velllum/VSCodeProjects/snake_3_3/food/food.h
+
+/home/velllum/VSCodeProjects/snake_3_3/game/game.h
+
+/home/velllum/VSCodeProjects/snake_3_3/main.cpp
+iostream
+-
+unistd.h
+-
+cstdio
+-
+cstdlib
+-
+const.h
+/home/velllum/VSCodeProjects/snake_3_3/const.h
+field/field.h
+/home/velllum/VSCodeProjects/snake_3_3/field/field.h
+food/food.h
+/home/velllum/VSCodeProjects/snake_3_3/food/food.h
+snake/snake.h
+/home/velllum/VSCodeProjects/snake_3_3/snake/snake.h
+game/game.h
+/home/velllum/VSCodeProjects/snake_3_3/game/game.h
+other/kbhit.h
+/home/velllum/VSCodeProjects/snake_3_3/other/kbhit.h
+
+/home/velllum/VSCodeProjects/snake_3_3/other/kbhit.h
+
+/home/velllum/VSCodeProjects/snake_3_3/snake/snake.h
+../const.h
+/home/velllum/VSCodeProjects/snake_3_3/const.h
+

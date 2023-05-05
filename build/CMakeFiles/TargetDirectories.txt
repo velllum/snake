@@ -1,0 +1,3 @@
+/home/velllum/VSCodeProjects/snake_3_3/build/CMakeFiles/rebuild_cache.dir
+/home/velllum/VSCodeProjects/snake_3_3/build/CMakeFiles/edit_cache.dir
+/home/velllum/VSCodeProjects/snake_3_3/build/CMakeFiles/snake_3.dir
