@@ -18,7 +18,7 @@ int main()
     std::system("setterm -cursor off");
     std::system("stty -icanon -echo"); // включаем неканонический ввод
 
-    snake_size =5; // Текущий размер змейки >0 Включает голову+размер хвоста (если 1- то только голова)
+    snake_size =6; // Текущий размер змейки >0 Включает голову+размер хвоста (если 1- то только голова)
     timeout =1000000; // время на сон равное 1 сек.
     game_on =true; // Признак продолжения игры
 
@@ -61,7 +61,7 @@ int main()
             case LEFT_L: case LEFT_U: // движение влево
 
                 direction =LEFT_; // задаем направление движения змейки
-                snake_x[0] =COLUMNS -snake_size; // установить индекс головы, с учетом размера змейки
+                snake_x[0] =LEN_SNAKE_MAX -snake_size; // установить индекс головы, с учетом размера змейки
 
                 for (int i =1; i <snake_size; ++i) // заполнить массив змейки хвостом
                 {
@@ -84,7 +84,7 @@ int main()
         {
             case RIGHT_: // движение в право
 
-                snake_tail =(snake_x[LEN_SNAKE_MAX -snake_size] -1); // получить последнее значение за хвостом
+                snake_tail =(snake_x[snake_size -1]); // получить последнее значение за хвостом
                 snake_head =snake_x[0]; // получить перевое значение, голову
 
                 for (int i =0; i <snake_size; ++i) // создаем передвижение змейки
@@ -102,13 +102,14 @@ int main()
                 }
 
                 field[snake_head] =HEAD_SYMBOL; // передаем символ головы в массив
-                field[snake_tail] =FIELD_SYMBOL; // меняем послед значение за хвастом
+                field[snake_tail -1] =FIELD_SYMBOL; // меняем послед значение за хвастом
 
                 break;
             
             case LEFT_: // движение в лево
 
-                snake_tail =(snake_x[LEN_SNAKE_MAX -snake_size] +1); // получить последнее значение за хвостом
+                // snake_tail =(snake_x[LEN_SNAKE_MAX -snake_size]); // получить последнее значение за хвостом
+                snake_tail =(snake_x[snake_size -1]); // получить последнее значение за хвостом
                 snake_head =snake_x[0]; // получить перевое значение, голову
 
                 for (int i =0; i <snake_size; ++i) // создаем передвижение змейки
@@ -117,7 +118,7 @@ int main()
 
                     if (snake_x[i] ==0)
                     {
-                        snake_x[i] =COLUMNS;
+                        snake_x[i] =LEN_SNAKE_MAX;
                     }
                     else
                     {
@@ -126,8 +127,8 @@ int main()
                 }
 
                 field[snake_head] =HEAD_SYMBOL; // передаем символ головы в массив
-                field[snake_tail] =FIELD_SYMBOL; // меняем послед значение за хвастом
-                
+                field[snake_tail !=LEN_SNAKE_MAX? snake_tail +1: 0] =FIELD_SYMBOL; // меняем послед значение за хвастом
+
                 break;
         }
 
