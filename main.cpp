@@ -14,7 +14,6 @@
 int main()
 {
     std::setlocale(LC_ALL, "");
-
     std::system("setterm -cursor off");
     std::system("stty -icanon -echo"); // включаем неканонический ввод
 
@@ -91,13 +90,13 @@ int main()
                 {
                     field[snake_x[i]] =TAIL_SYMBOL; // определяем тело на поле
 
-                    if (snake_x[i] ==COLUMNS)
+                    if (snake_x[i] ==COLUMNS) // проверка на максимальное значения длины поля
                     {
-                        snake_x[i] =0;
+                        snake_x[i] =0; // начинаем движение сночало, слева на право
                     }
                     else
                     {
-                        snake_x[i]++;
+                        snake_x[i]++; // увеличиваем на единицу, делаем шаг вперед
                     }
                 }
 
@@ -108,7 +107,6 @@ int main()
             
             case LEFT_: // движение в лево
 
-                // snake_tail =(snake_x[LEN_SNAKE_MAX -snake_size]); // получить последнее значение за хвостом
                 snake_tail =(snake_x[snake_size -1]); // получить последнее значение за хвостом
                 snake_head =snake_x[0]; // получить перевое значение, голову
 
@@ -116,13 +114,13 @@ int main()
                 {
                     field[snake_x[i]] =TAIL_SYMBOL; // определяем тело на поле
 
-                    if (snake_x[i] ==0)
+                    if (snake_x[i] ==0) // проверка на ноль
                     {
-                        snake_x[i] =LEN_SNAKE_MAX;
+                        snake_x[i] =LEN_SNAKE_MAX; // передаем максимальный размер массива змейки
                     }
                     else
                     {
-                        snake_x[i]--;
+                        snake_x[i]--; // уменьшаем на едницу
                     }
                 }
 
@@ -154,9 +152,6 @@ int main()
         }
     }
     while (game_on);
-
-//    system ("stty cooked");
-//    exit(0); //or terminate
 
     return 0;
 }
